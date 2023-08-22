@@ -1,17 +1,14 @@
-
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const title = "Welcome to the blog";
-  const link = "www.fortheeco.com"
 
   return (
     <div className="App">
+      <Navbar/>
       <div className="content">
-        <h2>{title}</h2>
-        <p>{Math.random() * 10}</p>
-
-        <a href={link}>FORTHEECO</a>
+        <Home/>
       </div>
     </div>
   );
