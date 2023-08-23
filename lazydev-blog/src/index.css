@@ -44,11 +44,11 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 2px solid #fafafa;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(218, 131, 18, 0.1);
+  box-shadow: 1px 3px 5px rgba(217, 141, 26, 0.1);
 }
 .blog-preview h2 {
   font-size: 20px;
