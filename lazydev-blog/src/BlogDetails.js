@@ -28,18 +28,24 @@ const BlogDetails = () => {
       text: commentText,
       author: 'Your Name', // You can set this dynamically based on your user system
     };
-  
+    try{
     // Assuming you have an API to add a comment, adjust the URL and method accordingly
-    fetch(`http://localhost:8000/blogs/${blog.id}/comments`, {
-      method: 'POST',
+    fetch(`http://localhost:8000/blogs/${blog.id}`, {
+      method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newComment),
+      body:{
+       'comments': JSON.stringify(newComment),
+      }
     })
       .then(response => response.json())
       .then(() => {
         // Update the local state to show the new comment
         setCommentText('');
       });
+    }catch(e){
+      console.log(e);
+
+    }
   };
   
 
